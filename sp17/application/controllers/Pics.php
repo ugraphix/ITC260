@@ -7,14 +7,14 @@ class Pics extends CI_Controller {
         public function __construct()
         {
                 parent::__construct();
-                //$this->load->model('pics_model');
+                $this->load->model('pics_model');
                 
         }
     
         public function index($param)
         {
                 
-            //$data['news'] = $this->news_model->get_news();
+            $data['pics'] = $this->pics_model->get_pics($param);
                 $data['title'] = $param;
 
                 
@@ -24,4 +24,4 @@ class Pics extends CI_Controller {
 
        
     
-}//end of news controller
+}//end of pics controller
