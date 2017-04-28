@@ -10,7 +10,7 @@ $this->load->view($this->config->item('theme') . 'header');
 
 
 
-<p><b> Here is where we will see pics</b></p>
+<p><b> Click on the links below to view pictures</b></p>
 
 <p><a href="<?=site_url("pics/frog")?>">Frog</a></p>
 <p><a href="<?=site_url("pics/bird")?>">Bird</a></p>
